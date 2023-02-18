@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-bg-svg: #6D28D9;
+  --color-font-svg: #DDD6FE;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: #6D28D9;
+}
+
+#theme {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+}
+
+main {
+  min-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+#timer {
+  display: grid;
+  place-content: center;
+}
+
+.time {
+  font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0 1.7rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 700ms;
+  position: relative;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.display-buttons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.cards {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-areas: 'col1 col2';
+  gap: 3.2rem;
+}
+
+input {
+  max-width: 10rem;
+  position: absolute;
+  bottom: 2.5rem;
+  z-index: 1;
+  left: 1rem
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: .2rem;
+  background: #8b5cf6;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  max-width: 2.0rem;
+  height: 1rem;
+  margin-top: -.6rem;
+  border-radius: 6rem;
+  color:  #DDD6FE;
+  cursor: pointer;
+}
+
+.forest svg,
+.rain svg,
+.coffee-shop svg,
+.fireplace svg {
+  width: 12rem;
+  height: 12rem;
+}
+
+.btn-play svg path,
+.btn-stop svg path,
+.btn-add svg path,
+.btn-subtract svg path {
+  fill: var(--color-bg-svg)
+}
+
+svg path:nth-child(2) {
+  fill: var(--color-bg-svg)
+}
+
+.selected svg path:nth-child(1) {
+  fill: var(--color-bg-svg);
+}
+
+.selected svg path:nth-child(2) {
+  fill: var(--color-font-svg);
+}
+
+/* DARK MODE */
+
+.hide {
+  display: none;
+}
+
+.dark {
+  background-color: black;
+  color: #6D28D9;
+}
+
+
+@media (min-width: 700px) {
+
+  main {
+    min-width: 70rem;
+    display: grid;
+    grid-template-areas: 'COL1 COL2';
+    margin: 10rem auto;
+  }
+
+  #timer {
+    margin-right: 10rem;
+  }
+
+  .time {
+    font-size: 12.6rem;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .display-buttons {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .forest svg,
+  .rain svg,
+  .coffee-shop svg,
+  .fireplace svg {
+  width: 13.8rem;
+  height: 15.2rem;
+}
+
+input {
+  max-width: 100%;
+  left: .5rem;
+}
+}
+
+@media (min-width: 1000px) {
+
+  #theme {
+    position: absolute;
+    right: 15.4rem;
+    top: 8.4rem;
+  }
+
+  main {
+    width: 100vw;
+    margin: 15rem;
+  }
+
+  #timer {
+    margin-right: 19rem;
+  }
+}
