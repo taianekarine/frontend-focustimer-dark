@@ -41,21 +41,22 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Emite som quando um card é selecionado
 - Emite som quando o cronometro chega a 00:00
 - Pode controlar o volume dos audios
+- Disponivel para mobile
 
 ## Demonstração
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://user-images.githubusercontent.com/94652702/219881841-881921eb-3323-4ed9-9345-81ba5ece5e25.mp4)
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://user-images.githubusercontent.com/94652702/219904962-707bd105-b134-4528-88a9-b66117e175d8.mp4)
 
 
 ## 🔖 Layout do projeto
 
-![PRO2-1](https://user-images.githubusercontent.com/94652702/219882013-ba7ab7a7-1039-4463-bbec-df493549669c.png)
+![PRO2-1](https://user-images.githubusercontent.com/94652702/219904992-5dde8993-b43c-45ae-9e6d-d9ca3c1c1b98.png)
 <br>
 
 <br>
 Link do Figma: 
 <br>
-https://www.figma.com/file/3gmiFBIZjbzihzTwZFyc9h/Stage-05-Focus-Timer-2.0-Copy?fuid=1120805184871805555
+https://www.figma.com/file/ySMrslV8rPKqkLs6JCy91k/Stage-05---Dark-Mode-FocusTimer-(Copy)?t=B5z2MBuPRSfEcETM-0
 
 <br>
 
@@ -71,7 +72,8 @@ https://www.figma.com/file/3gmiFBIZjbzihzTwZFyc9h/Stage-05-Focus-Timer-2.0-Copy?
 <br>
 
 ## Site online
-https://focustimer-eosin.vercel.app/
+
+https://focustimerdark.vercel.app/
 ---
 
 Feito com 🧡 by Taiane Karine.
